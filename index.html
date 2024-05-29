@@ -1,9 +1,176 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body>
-    <h1>hallo welt</h1>
-  </body>
+
+<head>
+    <title>Matthias Riemensperger</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style>
+    <!--include scripts-->
+
+    <script src="navigation.js"></script>
+    <script src="bottom.js"></script>
+    <script src="parallax.js"></script>
+    <script src="stickyNavList.js"></script>
+    <script src="smoothScroll.js"></script>
+    <script src="popUpHandler.js"></script>
+    <!--header-->
+
+
+    <button id="popup-screenoverlay" onclick="closePopUp()"></button>
+
+
+    <div class="parallax-container">
+
+
+        <section id="home">
+            <div class="parallax-background"></div>
+            <script>
+                generateNavigationBar();
+            </script>
+        </section>
+
+        <section id="portfolio">
+            <div class="backgroundBox">
+                <button class="sample-field" onclick="openPopUp('test-popup')">
+                    <img src="images/worksampleTestImage.png">
+                    <h>Test Worksample
+                        <p>Category</p>
+                    </h>
+                </button>
+
+                <button class="sample-field" onclick="openPopUp('dialoguesystem-popup')">
+                    <img src="images/samplefield_dialoguesystem.png">
+                    <h>Dialogue System
+                        <p>Tool</p>
+                    </h>
+                </button>
+            </div>
+        </section>
+
+
+        <section id="titles">
+            <div class="section-title">
+                <h>Titles</h>
+            </div>
+            <div class="backgroundBox"></div>
+        </section>
+
+
+        <section id="about">
+            <div class="section-title">
+                <h>About Me</h>
+            </div>
+            <div class="backgroundBox"></div>
+        </section>
+
+
+    </div>
+
+
+    <!--bottom-->
+
+    <script>
+        generateBottomBar();
+    </script>
+
+    <!--pop-up declaration-->
+
+    <div class="popup" id="test-popup">
+        <div class="popup-left">
+            <div class="popup-media white-background">
+                <c3>
+                    <iframe width="840" height="472" src="https://www.youtube.com/embed/LOOrS1x3STQ?si=SMJev3AsVlWDFUx7"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </c3>
+            </div>
+            <div class="popup-media">
+                <c1>
+                    <p2>Wow. AI images are great lol. I worked on this really long now when I wrote the promt in the
+                        machine. I had to write it again cause it wasn't quite right. SO exhausted from all that work
+                        lol!!!</p2>
+                    <img src="images/ki-bilder.webp">
+
+                </c1>
+            </div>
+
+            <div class="popup-media">
+                <c2>
+                    <p2>Wow. AI images are great lol. I worked on this really long now when I wrote the promt in the
+                        machine. I had to write it again cause it wasn't quite right. SO exhausted from all that work
+                        lol!!!</p2>
+                    <img src="images/floralfrenzyThumbnail.gif">
+                </c2>
+            </div>
+
+            <div class="popup-media">
+                <c2>
+                    <c3>
+                        <img src="images/worksampleTestImage.png">
+                        <p2>Wow lol omg he has a face on his nose=??</p2>
+                    </c3>
+                    <c3>
+                        <img src="images/gigglegala_thumbnail.png">
+                        <p2>Omg wait why his nose look like that? lol!!</p2>
+                    </c3>
+                </c2>
+            </div>
+
+        </div>
+        <div class="popup-right">
+            <h1>Test Worksample</h1>
+            <h2>Category</h2>
+            <p1>Worksample that I didn't really create for a test pop up.</p1>
+        </div>
+    </div>
+
+    <div class="popup" id="dialoguesystem-popup">
+        <div class="popup-left">
+            <div class="popup-media white-background">
+                <c3>
+                    <iframe width="860" height="482" src="https://www.youtube.com/embed/eIEZ5Qd1QXk?si=stMcXlcRfBYNq3M2"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </c3>
+
+            </div>
+            <div class="popup-media">
+                <c3>
+                    <p2>A flexible Dialogue Tool created with a designer-friendly system in mind!</p2>
+                </c3>
+            </div>
+            <div class="popup-media">
+                <c2>
+                    <p2>
+                        The system is built on Scriptable Objects. Designers can freely add and remove sentences and
+                        assign animations and facial expressions. <br><br>
+                        It is abstract in nature, so that users can decide, how emotion and animation should be
+                        interpreted for their characters, as its animation handlers are entirely
+                        decoupled from the system itself.<br><br>
+                        In order to give the player a natural feeling, the system will automatically adjust to the
+                        string which it is reading. For instance, any punctuation will lower text speedand characters
+                        that aren't letters will interrupt speaking animations.
+                    </p2>
+                    <img src="images/dialoguesystem_scriptable_object.PNG">
+                </c2>
+            </div>
+        </div>
+
+        <div class="popup-right">
+            <h1>Dialogue System</h1>
+            <h2>Tool</h2>
+            <p1>A simple exploration of a Dialogue System for Unity.</p1>
+            <p1>Originally created for a potential rework of Floral Frenzy, I have used this tool in several projects, including my most recent, Untitled Dance Game.</p1>
+        </div>
+    </div>
+
+</body>
+
 </html>

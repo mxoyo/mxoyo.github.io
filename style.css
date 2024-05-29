@@ -1,0 +1,475 @@
+@font-face {
+    font-family: Chakra;
+    src: url(fonts/ChakraPetch-Regular.ttf)
+}
+
+body {
+    background-color: #1c6769;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navButton,
+.dropdown-content,
+.sample-field p {
+    font-family: "Chakra";
+    font-size: 20px;
+    background-color: #318d85;
+    color: white;
+    letter-spacing: 0.1rem;
+    width: 220px;
+}
+
+.navigationList {
+
+    height: 80px;
+    background-color: #1c6769;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navButtonHolder {
+    height: 100%;
+}
+
+.navButton {
+    height: 100%;
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.1s ease;
+}
+
+.navButton:hover,
+.dropdown-content a:hover {
+    background-color: #4db8a6;
+}
+
+
+.dropdown {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.backgroundBox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3% 5% 3%;
+    border: solid 4px #1c6769;
+    background-color: rgba(255, 255, 255, 0.534);
+    justify-content: center;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-image: url(images/backgroundTiles.jpg);
+    z-index: -1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#nameButton {
+    position: absolute;
+    left: 0;
+    height: inherit;
+    background-color: transparent;
+    align-content: center;
+}
+
+.headerTitle {
+    padding-left: 16%;
+    align-content: center;
+}
+
+
+
+.headerGif {
+    width: 30%;
+    padding-right: 5%;
+    justify-items: center;
+}
+
+.headerBackground {
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sample-field {
+    display: block;
+    width: 300px;
+    min-height: 360px;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 2%;
+    border-width: 0px;
+}
+
+.headerBackground h1,
+.section-title,
+.sample-field h {
+    align-content: center;
+    color: black;
+    letter-spacing: .15rem;
+    font-family: "Chakra", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.headerBackground p {
+    font-size: 20px;
+    margin-block-start: 1%;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 0px;
+    margin: 4% 3% 4%;
+    align-content: center;
+    text-align: center;
+    border: solid 4px #073b3d;
+    background-color: white;
+    padding: 0.5%;
+}
+
+.section-title h {
+    font-size: 50px;
+}
+
+.sample-field:hover h {
+    top: -35%;
+}
+
+
+.sample-field img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    transition: opacity 0.15s ease;
+}
+
+.sample-field:hover img {
+    opacity: 30%;
+}
+
+.sample-field:hover p {
+    visibility: visible;
+    opacity: 100%;
+}
+
+.sample-field h {
+    position: relative;
+    top: 6%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: top 0.15s ease;
+}
+
+.sample-field p {
+    visibility: hidden;
+    opacity: 0%;
+    text-align: center;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+    margin: 1% auto;
+    letter-spacing: .5rem;
+    transition: opacity 0.4s ease;
+}
+
+.popup {
+    display: flex;
+    visibility: hidden;
+    opacity: 0%;
+    position: fixed;
+    width: 1400px;
+    height: 840px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(239, 243, 242);
+    z-index: -100;
+    transition: opacity 0.2s ease;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+.popup-left,
+.popup-right {
+    display: block;
+    height: 100%;
+    padding: 1.3%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.popup-left {
+    width:100%;
+    height:auto;
+    padding: 3% 4%;
+    overflow: auto;
+}
+
+.popup-media {
+    display: flex;
+    height:auto;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 50px;
+    padding: 2%;
+}
+
+.white-background{
+    background-color:#ffffff; 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.24);
+    margin-bottom: 25px;
+}
+
+.popup-media iframe{
+    display:block;
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+.popup-media img {
+    margin: auto;
+    max-width: 100%;
+}
+
+.popup-right {
+    background-color: #073b3d;
+    width: 30%;
+}
+
+.popup-right h1,
+.popup-right h2,
+.popup-right p1,
+.popup-left p2 {
+    font-family: "Chakra", sans-serif;
+    color: white;
+    font-weight: normal;
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: .2rem;
+}
+
+.popup-right h2,
+.popup-right p1 {
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.popup-right h2 {
+    font-size: 17px;
+}
+
+.popup-right p1,
+.popup-left p2 {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+.popup-left p2 {
+    color: black;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.popup-media c1, c2{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    display: flex;
+    width:100%;
+    height:auto;
+}
+
+.popup-media c1 p2, .popup-media c2 p2{
+    max-width: 350px;
+    margin-bottom: 0px;
+    height:inherit;
+}
+
+.popup-media c1 img, .popup-media c2 img{
+    /*margin:0 70px 0 0;*/
+    min-width: 1%;
+    max-width: 50%;
+    padding-right:10%;
+}
+
+.popup-media c2{
+    flex-direction: row;
+}
+
+.popup-media c2 img{
+    padding-right:0%;
+    padding-left:10%;
+}
+
+.popup-media c3{
+    display:block;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.popup-media c3 p2{
+    text-align: center;
+    margin:auto;
+}
+
+.popup-media c3 img{
+    padding: 0;
+    display:block;
+    margin:auto;
+}
+
+.popup-left::-webkit-scrollbar {
+    width: 10px;
+    /* Set the width of the scrollbar */
+    background-color:rgb(200, 204, 204);
+    /* Set the background color of the scrollbar */
+    position: absolute;
+    left: 2000;
+    /* Position the scrollbar on the left of the element */
+}
+
+.popup-left::-webkit-scrollbar-thumb {
+    background-color: #9ebbb8;
+    /* Set the color of the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background: #5d7e72;
+}
+
+#popup-screenoverlay {
+    visibility: hidden;
+    background-color: #203a3b80;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 25;
+    transition: opacity 0.2s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .headerBackground {
+        height: 400px;
+        padding: 2%;
+        justify-content: center;
+        display: block;
+    }
+
+    .headerBackground h1 {
+        font-size: 40px;
+        letter-spacing: .25rem;
+    }
+
+    .headerBackground p {
+        margin-block-start: .5em;
+    }
+
+    .headerTitle {
+        padding-left: 0;
+    }
+
+    .navigationList {
+        height: 65px;
+        justify-content: center;
+
+    }
+
+    .headerGif {
+        height: 65%;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .navButton {
+        width: 100px;
+
+    }
+
+    .navButtonHolder {
+        margin: 0 3% 0;
+    }
+
+    #nameButton {
+        visibility: hidden;
+    }
+
+    .section-title h {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navButton {
+        width: 150px;
+    }
+
+    .headerBackground h1 {
+        font-size: 55px;
+    }
+
+    .headerGif {
+        width: 37%;
+    }
+}
