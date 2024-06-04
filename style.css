@@ -82,7 +82,8 @@ html {
 .backgroundBox {
     display: flex;
     flex-flow: row wrap;
-    margin: 3% 5% 3%;
+    margin: 0 5% 3%;
+    min-height: 150px;
     border: solid 4px #0e3c3d;
     background-color: rgba(255, 255, 255, 0.534);
     justify-content: center;
@@ -176,16 +177,17 @@ html {
 
 .section-title {
     font-size: 0px;
-    margin: 4% 3% 4%;
+    margin: 4% 7% 0;
     align-content: center;
     text-align: center;
-    border: solid 4px #073b3d;
-    background-color: white;
+    background-color: #073b3d;
     padding: 0.5%;
+    max-width: 400px;
 }
 
 .section-title h {
-    font-size: 50px;
+    font-size: 30px;
+    color:white;
 }
 
 .sample-field:hover h {
@@ -212,10 +214,11 @@ html {
 .sample-field h {
     position: relative;
     top: 6%;
-    font-size: 25px;
     font-weight: bold;
+    font-size: 22px;
     text-align: center;
     transition: top 0.15s ease;
+    color: black;
 }
 
 .sample-field p {
