@@ -16,10 +16,10 @@ function generateNavigationBar() {
                     <a href="#home"><button class="navButton" style="width: 300px;">Matthias Riemensperger
                         </button></a>
                 </div>
-                <div class="navButtonHolder"><a href="#portfolio" onclick="scrollToSection('portfolio'); return false;">
-                        <button class="navButton">Portfolio</button></a></div>
                 <div class="navButtonHolder"><a href="#titles" onclick="scrollToSection('titles'); return false;">
-                        <button class="navButton">Titles</button></a></div>
+                        <button class="navButton">Portfolio</button></a></div>
+                <div class="navButtonHolder"><a href="#portfolio" onclick="scrollToSection('portfolio'); return false;">
+                        <button class="navButton">Worksamples</button></a></div>
                 <div class="navButtonHolder"><a href="#about" onclick="scrollToSection('about'); return false;">
                         <button class="navButton">About</button></a></div>
             </div>

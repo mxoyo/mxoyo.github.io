@@ -10,6 +10,7 @@ function openPopUp(popupID) {
 }
 
 function closePopUp() {
+    stopVideos();
     const popups = document.querySelectorAll(".popup");
     const screenOverlay = document.getElementById("popup-screenoverlay")
     popups.forEach((popup) => {
@@ -20,3 +21,15 @@ function closePopUp() {
     screenOverlay.style.visibility = "hidden";
     screenOverlay.style.opacity = "0%";
 }
+
+var stopVideos = function () {
+	var videos = document.querySelectorAll('iframe, video');
+	Array.prototype.forEach.call(videos, function (video) {
+		if (video.tagName.toLowerCase() === 'video') {
+			video.pause();
+		} else {
+			var src = video.src;
+			video.src = src;
+		}
+	});
+};
