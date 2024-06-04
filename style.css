@@ -82,11 +82,12 @@ html {
 .backgroundBox {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 5% 3%;
+    margin: 0 auto 3%;
     min-height: 150px;
-    border: solid 4px #0e3c3d;
-    background-color: rgba(255, 255, 255, 0.534);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.678);
     justify-content: center;
+    width:100%;
 }
 
 .parallax-container {
@@ -145,8 +146,8 @@ html {
 
 .sample-field {
     display: block;
-    width: 300px;
-    min-height: 360px;
+    width: 270px;
+    min-height: 320px;
     background-color: white;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.24);
     box-sizing: border-box;
@@ -175,12 +176,13 @@ html {
     text-align: center;
 }
 
+
 .section-title {
     font-size: 0px;
-    margin: 4% 7% 0;
+    margin: 4% 0 0;
     align-content: center;
     text-align: center;
-    background-color: #073b3d;
+    background-color: #0e4547e0;
     padding: 0.5%;
     max-width: 400px;
 }
