@@ -46,7 +46,7 @@
                     </h>
                 </button>
 
-                <button class="sample-field" onclick="openPopUp('showreel-popup')">
+                <button class="sample-field" onclick="openPopUp('floralfrenzy-popup')">
                     <img src="images/worksamplefloralfrenzy.jpg">
                     <h>Floral Frenzy
                         <p>Game</p>
@@ -76,7 +76,7 @@
                     </h>
                 </button>
 
-                <button class="sample-field" onclick="openPopUp('test-popup')">
+                <button class="sample-field" onclick="openPopUp('test-popup')" style = "display: none;">
                     <img src="images/worksampleTestImage.png">
                     <h>Test Worksample
                         <p>Category</p>
@@ -240,6 +240,46 @@
         </div>
     </div>
 
+    <div class="popup" id="floralfrenzy-popup">
+        <div class="popup-left">
+            <div class="popup-media white-background">
+                <c3>
+                    <iframe src="https://www.youtube.com/embed/eSyS6_dbtYk?si=u8YMYICpXeCzOHty"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </c3>
+
+            </div>
+            <div class="popup-media">
+                <c3>
+                    <p2>A cozy, chaotic strategy game.</p2>
+                </c3>
+            </div>
+            <div class="popup-media">
+                <c2>
+                    <p2>
+                        The system is built on Scriptable Objects. Designers can freely add and remove sentences and
+                        assign animations and facial expressions. <br><br>
+                        It is abstract in nature, so that users can decide, how emotion and animation should be
+                        interpreted for their characters, as its animation handlers are entirely
+                        decoupled from the system itself.<br><br>
+                        In order to give the player a natural feeling, the system will automatically adjust to the
+                        string which it is reading. For instance, any punctuation will lower text speed and characters
+                        that aren't letters will interrupt speaking animations.
+                    </p2>
+                    <img src="images/dialoguesystem_scriptable_object.png">
+                </c2>
+            </div>
+        </div>
+
+        <div class="popup-right">
+            <h1>Floral Frenzy</h1>
+            <h2>Game</h2>
+            <p1>You arrive in a village of seemingly sweet animals, who turn out to have no moral compass and have nothing but trouble in mind. Will you make it out?!</p1>
+        </div>
+    </div>
+
     <div class="popup" id="fruit-generator-popup">
         <div class="popup-left">
             <div class="popup-media white-background">
@@ -251,6 +291,7 @@
 
                 </c3>
             </div>
+
             <div class="popup-media">
                 <c3>
                     <p2>A procedural generation system for toon-style fruit.</p2>
@@ -259,31 +300,56 @@
 
             <div class="popup-media">
                 <c2>
-                    <p2>Wow. AI images are great lol. I worked on this really long now when I wrote the promt in the
-                        machine. I had to write it again cause it wasn't quite right. SO exhausted from all that work
-                        lol!!!</p2>
-                    <img src="images/floralfrenzyThumbnail.gif">
+                    <c3>
+                        <img src="images/fruityfriends-fruit-concept.jpg">
+                    </c3>
+                    <c3>
+                        <p2>Concept art I created, which helped me define both the
+                            aesthetic and also the logical requirements and constraints of our procedural fruit
+                            generation
+                            tool.
+                        </p2>
+                    </c3>
+
+
                 </c2>
+            </div>
+
+
+            <div class="popup-media">
+                <c3>
+                    <img src="images/fruityfriends-fruit-breakdown.jpg">
+                    <p2><br>I identified the key components of a stylized fruit and incorporated each into the
+                        generation logic.</p2>
+                </c3>
             </div>
 
             <div class="popup-media">
                 <c2>
                     <c3>
-                        <img src="images/worksampleTestImage.png">
-                        <p2>Wow lol omg he has a face on his nose=??</p2>
+                        <img src = "images/fruityfriends-scriptableObject.jpg">
+                        <p2>Scriptable objects made the tool designer-friendly.</p2>
                     </c3>
                     <c3>
-                        <img src="images/gigglegala_thumbnail.png">
-                        <p2>Omg wait why his nose look like that? lol!!</p2>
+                        <img src="images/fruityfriends-fruitgenerator.jpg">
+                        <p2>Working with structs helped ensure freedom in design.</p2>
                     </c3>
                 </c2>
             </div>
+
+            <div class="popup-media">
+                <c3>
+                    <img src="images/fruityfriends-shader.jpg">
+                    <p2><br>Shader created in Unity Shader Graph which uses vertex displacement to procedurally change the shape of the base mesh.</p2>
+                </c3>
+            </div>
+
 
         </div>
         <div class="popup-right">
             <h1>Procedural Fruit Generator</h1>
             <h2>Tool/Shader</h2>
-            <p1>Worksample that I didn't really create for a test pop up.</p1>
+            <p1>A tool that procedurally creates a fruit, using Shader Graph and C#-Scripts in Unity.</p1>
         </div>
     </div>
 
