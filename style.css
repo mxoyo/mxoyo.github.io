@@ -389,6 +389,7 @@ html {
     padding: 0;
     display:block;
     margin:auto;
+    max-width: 70%;
 }
 
 .popup-left iframe{
