@@ -342,6 +342,10 @@ html {
     margin-bottom: 30px;
     width: 100%;
 }
+.popup-left span{
+    font-weight: bold;
+    color:#0a6366;
+}
 
 .popup-media c1, c2{
     justify-content: space-between;
@@ -390,6 +394,12 @@ html {
     display:block;
     margin:auto;
     max-width: 70%;
+}
+
+.popup-media c1 iframe, .popup-media c2 iframe{
+    width: 430px;
+    height: 241px;
+    margin: auto 0;
 }
 
 .popup-left iframe{
