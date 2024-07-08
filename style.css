@@ -420,6 +420,10 @@ html {
     font-weight: bold;
 }
 
+.popup-left a{
+    color:#318d85;
+}
+
 .popup-left::-webkit-scrollbar {
     width: 10px;
     /* Set the width of the scrollbar */
