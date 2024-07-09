@@ -15,6 +15,32 @@ html {
     scroll-behavior: smooth;
 }
 
+#bottom{
+    min-height: 90px;
+    width: 100%;
+    display: flex;
+}
+
+.contact-dropdown{
+    color: #91b9aa;
+    font-family: "Chakra", sans-serif;
+    font-size:25px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.24);
+    margin: auto;
+    margin-top:10px;
+    text-align: center;
+    background-color: #2e665d;
+}
+
+.contact-dropdown content{
+    display: none;
+    min-width: 1200px;
+    min-height: 300px;
+}
+
 .navButton,
 .dropdown-content,
 .sample-field p {
@@ -40,6 +66,10 @@ html {
     height: 100%;
 }
 
+.navButtonHolder a{
+    text-decoration: none;
+}
+
 .navButton {
     height: 100%;
     background-color: transparent;
@@ -49,7 +79,7 @@ html {
 
 .navButton:hover,
 .dropdown-content a:hover {
-    background-color: #4db8a6;
+    background-color: #2e665d;
 }
 
 
@@ -175,6 +205,7 @@ html {
     letter-spacing: .2rem;
     text-align: center;
 }
+
 
 
 .section-title {
@@ -510,8 +541,11 @@ html {
     }
 
     .navButton {
+        display:flex;
         width: 100px;
-
+        text-align: center;
+        justify-content: center;
+        padding-top: 17px;
     }
 
     .navButtonHolder {
@@ -524,6 +558,10 @@ html {
 
     .section-title h {
         font-size: 35px;
+    }
+
+    .popup{
+        display:block;
     }
 }
 

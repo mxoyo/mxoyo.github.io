@@ -17,6 +17,7 @@
     <script src="stickyNavList.js"></script>
     <script src="smoothScroll.js"></script>
     <script src="popUpHandler.js"></script>
+    <script src="contact-dropwdown.js"></script>
     <!--header-->
 
 
@@ -28,9 +29,46 @@
 
         <section id="home">
             <div class="parallax-background"></div>
-            <script>
-                generateNavigationBar();
-            </script>
+            <div class="headerBackground">
+                <div class="headerTitle">
+                    <h1>Hi, I'm Matthias
+                        <p>Technical Animator, Programmer</p>
+                    </h1>
+
+                    <h1 style = "margin:auto">
+                        <p>
+                            riemensperger.matthias@gmail.com
+                        </p>
+                    </h1>
+
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/matthias-riemensperger-1958a6279/" target="_blank"><img
+                                src="images/icon-linkedIn.png"></a>
+                        <a href="https://4bpm.itch.io/cosmobeat" target="_blank"><img src="images/icon-itch.png"></a>
+                    </div>
+
+                   
+
+
+                </div>
+                <div class="headerGif">
+                    <img src="images/gorbHeader_1.gif" alt="GIF of Dance Character"
+                        style="display:block; margin: auto; max-height: 100%;">
+                </div>
+            </div>
+            <div class="navigationList" id="navigationList">
+                <div id="nameButton">
+                    <a href="#home"><button class="navButton" style="width: 300px;">Matthias Riemensperger
+                        </button></a>
+                </div>
+                <div class="navButtonHolder"><a href="#titles" onclick="scrollToSection('titles'); return false;">
+                        <button class="navButton">Portfolio</button></a></div>
+                <div class="navButtonHolder"><a href="#portfolio" onclick="scrollToSection('portfolio'); return false;">
+                        <button class="navButton">Worksamples</button></a></div>
+                <div class="navButtonHolder"><a href="#about" onclick="scrollToSection('about'); return false;">
+                        <button class="navButton">About</button></a></div>
+            </div>
+            <br>
         </section>
 
         <section id="titles">
@@ -114,9 +152,20 @@
 
     <!--bottom-->
 
-    <script>
-        generateBottomBar();
-    </script>
+    <div id="bottom">
+        <div class="contact-dropdown">
+            <button class="contact-dropdown"
+                onclick="openDropdown('contact-content'); scrollToSection('impressum')">Contact</button>
+            <content id="contact-content" style="display: none;">
+
+                <br><br>Matthias Riemensperger
+                <br>Schlesierstraße 40 64839 Münster
+                <br>riemensperger.matthias@gmail.com
+                <br>+49 151 67549589
+                <section id='impressum'></section>
+            </content>
+        </div>
+    </div>
 
     <!--pop-up declaration-->
 
@@ -588,7 +637,7 @@
                 </c3>
             </div>
 
-           
+
 
             <div class="popup-media">
                 <c1>
@@ -633,10 +682,10 @@
                 </c2>
             </div>
 
-            <div class = "popup-media">
-                <div class = "icon-container">
-                    <img src = "images/icon-unity-dark.png">
-                    <img src = "images/icon-csharp-dark.png">
+            <div class="popup-media">
+                <div class="icon-container">
+                    <img src="images/icon-unity-dark.png">
+                    <img src="images/icon-csharp-dark.png">
                 </div>
             </div>
 
@@ -670,13 +719,13 @@
                 </c3>
             </div>
 
-            <div class = "popup-media">
-                <div class = "icon-container">
-                    <img src = "images/icon-unity-dark.png">
-                    <img src = "images/icon-csharp-dark.png">
+            <div class="popup-media">
+                <div class="icon-container">
+                    <img src="images/icon-unity-dark.png">
+                    <img src="images/icon-csharp-dark.png">
                 </div>
             </div>
-            
+
             <h1>Giggle Gala</h1>
             <div class="popup-media white-background">
                 <c3>
@@ -698,10 +747,10 @@
                 </c3>
             </div>
 
-            <div class = "popup-media">
-                <div class = "icon-container">
-                    <img src = "images/icon-unity-dark.png">
-                    <img src = "images/icon-csharp-dark.png">
+            <div class="popup-media">
+                <div class="icon-container">
+                    <img src="images/icon-unity-dark.png">
+                    <img src="images/icon-csharp-dark.png">
                 </div>
             </div>
 
