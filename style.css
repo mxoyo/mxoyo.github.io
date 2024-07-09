@@ -491,6 +491,44 @@ html {
     opacity: 80%;
 }
 
+.portrait{
+
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    border: dashed 5px rgba(61, 112, 84, 0.452);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+    margin:auto 0;
+}
+
+.aboutme{
+    display:flex;
+    flex-direction: row;
+    min-height: 500px;
+    min-width: 1200px;
+    margin: 3% auto;
+}
+
+.aboutme p{
+    display:block;
+    background-color: white;
+    width: 1200px;
+    height: 500px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+    font-family: "Chakra", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 1%;
+}
+
+.portrait img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
 ::-webkit-scrollbar-track {
     background: #5d7e72;
 }
@@ -558,10 +596,6 @@ html {
 
     .section-title h {
         font-size: 35px;
-    }
-
-    .popup{
-        display:block;
     }
 }
 
